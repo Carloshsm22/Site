@@ -3,71 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive Club</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script>
-        // Theme toggle function
-        function toggleTheme() {
-            const body = document.body;
-            body.classList.toggle('bg-gray-800');
-            body.classList.toggle('text-white');
-        }
-
-        // Modal management
-        function showModal(id) {
-            document.getElementById(id).classList.remove('hidden');
-        }
-
-        function closeModal(id) {
-            document.getElementById(id).classList.add('hidden');
-        }
-
-        // Dynamic content rendering
-        document.addEventListener('DOMContentLoaded', function () {
-            const navItems = ['Home', 'Features', 'Pricing', 'Contact'];
-            const navContainer = document.getElementById('navItems');
-            navItems.forEach(item => {
-                let li = document.createElement('li');
-                li.classList.add('mr-6');
-                li.innerHTML = `<a href="#" class="text-gray-700 hover:text-gray-900">${item}</a>`;
-                navContainer.appendChild(li);
-            });
-        });
-    </script>
+    <title>Exclusive Club Premium Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-black">
-    <header class="flex justify-between p-5 bg-gray-200">
-        <h1 class="text-2xl font-bold">Exclusive Club</h1>
-        <button onclick="toggleTheme()" class="p-2 rounded bg-blue-500 text-white">Toggle Theme</button>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="bg-gray-300 p-3">
-        <ul id="navItems" class="flex list-none"></ul>
-    </nav>
-    <main class="p-5">
-        <section class="mb-5">
-            <h2 class="text-xl font-semibold">Features</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">Feature 1</div>
+                <div class="feature-item">Feature 2</div>
+                <div class="feature-item">Feature 3</div>
+            </div>
         </section>
-        <section class="mb-5">
-            <h2 class="text-xl font-semibold">Content Preview</h2>
-            <p>Check out our amazing content available for premium members.</p>
+        <section id="content-preview">
+            <h2>Content Preview</h2>
+            <p>Here is a sneak peek of what our premium content offers...</p>
         </section>
-        <section class="mb-5">
-            <h2 class="text-xl font-semibold">Pricing Tiers</h2>
-            <ul class="list-disc pl-5">
-                <li>Basic: Free</li>
-                <li>Standard: $10/month</li>
-                <li>Premium: $20/month</li>
-            </ul>
+        <section id="pricing">
+            <h2>Pricing Tiers</h2>
+            <div class="pricing-tier">
+                <h3>Basic Plan</h3>
+                <p>$10/month</p>
+            </div>
+            <div class="pricing-tier">
+                <h3>Premium Plan</h3>
+                <p>$20/month</p>
+            </div>
         </section>
-        <footer class="bg-gray-200 p-5 mt-5">
-            <h3 class="font-semibold">Follow Us</h3>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="text-blue-600">Facebook</a></li>
-                <li><a href="#" class="text-blue-600">Twitter</a></li>
-                <li><a href="#" class="text-blue-600">Instagram</a></li>
-            </ul>
-        </footer>
+        <section id="authentication">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>© 2026 Exclusive Club. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
