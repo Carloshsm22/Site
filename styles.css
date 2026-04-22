@@ -1,0 +1,45 @@
+.exclusive-club {
+    background: linear-gradient(to right, #D8BFD8, #F5F5DC);
+    color: #3E3E3E;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #3E3E3E;
+        color: #F5F5DC;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #D8BFD8;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #CDA4C4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .exclusive-club {
+        padding: 20px;
+    }
+}
