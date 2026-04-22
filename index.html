@@ -3,56 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive Club Premium Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Exclusive Club | Premium Content</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<body class="bg-[#001a33] text-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-[#001a33]/80 backdrop-blur border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-[#d8b4fe] flex items-center justify-center">
+                    <i class="fas fa-fire text-[#001a33]"></i>
+                </div>
+                <h1 class="text-2xl font-bold">ExclusiveClub</h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="hover:text-[#d8b4fe]">Home</a>
+                <a href="#" class="hover:text-[#d8b4fe]">Explore</a>
+                <a href="#" class="hover:text-[#d8b4fe]">Premium</a>
+                <a href="#" class="hover:text-[#d8b4fe]">Community</a>
+                <a href="#" class="hover:text-[#d8b4fe]">About</a>
+            </div>
+            <div class="hidden md:flex gap-4 items-center">
+                <button class="px-6 py-2 border border-[#d8b4fe] text-[#d8b4fe] rounded-full">Login</button>
+                <button class="px-6 py-2 bg-[#d8b4fe] text-[#001a33] rounded-full font-semibold">Join Now</button>
+                <i class="fas fa-moon cursor-pointer"></i>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="features">
-            <h2>Features</h2>
-            <div class="features-grid">
-                <div class="feature-item">Feature 1</div>
-                <div class="feature-item">Feature 2</div>
-                <div class="feature-item">Feature 3</div>
+
+    <!-- Hero -->
+    <section class="py-32 text-center px-6">
+        <h2 class="text-6xl font-bold mb-6">Experience <span class="text-[#d8b4fe]">Premium</span> Content</h2>
+        <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">Join our exclusive community for curated content and meaningful connections in a sophisticated environment.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+            <button class="px-8 py-4 bg-[#d8b4fe] text-[#001a33] rounded-full font-semibold">Start Free Trial</button>
+            <button class="px-8 py-4 border-2 border-gray-600 text-white rounded-full">Explore Features</button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-24 px-6 bg-[#1a2847]/50">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-16">What You'll <span class="text-[#d8b4fe]">Experience</span></h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#1a2847] p-8 rounded-2xl border border-gray-700">
+                    <i class="fas fa-star text-3xl text-[#d8b4fe] mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Curated Content</h4>
+                    <p class="text-gray-400">Handpicked premium content updated daily.</p>
+                </div>
+                <div class="bg-[#1a2847] p-8 rounded-2xl border border-gray-700">
+                    <i class="fas fa-lock text-3xl text-[#d8b4fe] mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Private Community</h4>
+                    <p class="text-gray-400">Connect with like-minded individuals.</p>
+                </div>
+                <div class="bg-[#1a2847] p-8 rounded-2xl border border-gray-700">
+                    <i class="fas fa-video text-3xl text-[#d8b4fe] mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Live Experiences</h4>
+                    <p class="text-gray-400">Exclusive live sessions and events.</p>
+                </div>
             </div>
-        </section>
-        <section id="content-preview">
-            <h2>Content Preview</h2>
-            <p>Here is a sneak peek of what our premium content offers...</p>
-        </section>
-        <section id="pricing">
-            <h2>Pricing Tiers</h2>
-            <div class="pricing-tier">
-                <h3>Basic Plan</h3>
-                <p>$10/month</p>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-24 px-6">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-16">Choose Your <span class="text-[#d8b4fe]">Membership</span></h3>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-[#1a2847] p-8 rounded-2xl border border-gray-700">
+                    <h4 class="text-2xl font-bold mb-4">Basic</h4>
+                    <p class="text-4xl mb-6 font-bold">$9.99<span class="text-gray-400 text-lg">/mo</span></p>
+                    <button class="w-full py-3 border border-[#d8b4fe] text-[#d8b4fe] rounded-lg">Choose Plan</button>
+                </div>
+                <div class="bg-[#1a2847] p-8 rounded-2xl border-2 border-[#d8b4fe] relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#d8b4fe] text-[#001a33] px-4 py-1 rounded-full text-sm font-bold">Most Popular</div>
+                    <h4 class="text-2xl font-bold mb-4">Premium</h4>
+                    <p class="text-4xl mb-6 font-bold">$24.99<span class="text-gray-400 text-lg">/mo</span></p>
+                    <button class="w-full py-3 bg-[#d8b4fe] text-[#001a33] rounded-lg font-semibold">Choose Plan</button>
+                </div>
+                <div class="bg-[#1a2847] p-8 rounded-2xl border border-gray-700">
+                    <h4 class="text-2xl font-bold mb-4">VIP</h4>
+                    <p class="text-4xl mb-6 font-bold">$49.99<span class="text-gray-400 text-lg">/mo</span></p>
+                    <button class="w-full py-3 border border-[#d8b4fe] text-[#d8b4fe] rounded-lg">Choose Plan</button>
+                </div>
             </div>
-            <div class="pricing-tier">
-                <h3>Premium Plan</h3>
-                <p>$20/month</p>
-            </div>
-        </section>
-        <section id="authentication">
-            <h2>Login</h2>
-            <form>
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 Exclusive Club. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a2847] border-t border-gray-800 py-12 text-center text-gray-400">
+        <p>&copy; 2024 Exclusive Club. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
